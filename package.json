@@ -1,0 +1,23 @@
+{
+  "name": "ethiopian-captcha",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./react": "./src/react/EtCaptcha.jsx"
+  },
+  "keywords": [
+    "captcha",
+    "ethiopia",
+    "amharic",
+    "fidel",
+    "security"
+  ],
+  "author": "Amenadam Solomon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amenadam/ethiopian-captcha"
+  }
+}
