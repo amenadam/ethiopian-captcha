@@ -50,7 +50,7 @@ export const generateCaptcha = (
 };
 
 const CAPTCHA_TTL = captchaConfig.ttl;
-const MAX_ATTEMPTS = captchaConfig.attempts;
+const MAX_ATTEMPTS = captchaConfig.maxAttempts;
 export const validateCaptcha = (captchaId, userInput) => {
   const captcha = generatedCaptchas.get(captchaId);
 
