@@ -1,23 +1,62 @@
 {
   "name": "ethiopian-captcha",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "type": "module",
   "main": "src/index.js",
   "exports": {
-    ".": "./src/index.js",
-    "./react": "./src/react/EtCaptcha.jsx"
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./react": {
+      "types": "./src/react/EtCaptcha.d.ts",
+      "default": "./src/react/EtCaptcha.js"
+    },
+    "./package.json": "./package.json"
   },
   "keywords": [
     "captcha",
     "ethiopia",
     "amharic",
     "fidel",
-    "security"
+    "security",
+    "geez",
+    "amharic-captcha",
+    "ethiopian-captcha"
   ],
   "author": "Amenadam Solomon",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/amenadam/ethiopian-captcha"
-  }
+  },
+  "description": "Ethiopian CAPTCHA: Amharic fidel and Ge'ez-numeral challenges with server-side distorted vector images, HMAC-hashed answers and single-use validation. Zero dependencies.",
+  "types": "src/index.d.ts",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "build:glyphs": "python scripts/build-glyphs.py"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/amenadam/ethiopian-captcha/issues"
+  },
+  "homepage": "https://github.com/amenadam/ethiopian-captcha#readme"
 }
