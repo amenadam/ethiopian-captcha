@@ -60,7 +60,6 @@ export function ClickImage({
           style={{
             position: "absolute",
             background: "blue",
-            border: "1px solid white",
             width: "15px",
             height: "15px",
             left: iconPosition.x,
@@ -87,7 +86,6 @@ export function ClickImage({
             onClick={() => setInput(0)}
             style={{
               background: `${input === 0 ? "#00000080" : ""}`,
-              border: "1px solid #000",
             }}
           >
             0
@@ -96,51 +94,29 @@ export function ClickImage({
             onClick={() => setInput(1)}
             style={{
               background: `${input === 1 ? "#00000080" : ""}`,
-              border: "1px solid #000",
             }}
           >
             1
           </div>
-          <div
-            onClick={() => setInput(2)}
-            style={{ background: "", border: "1px solid #000" }}
-          >
+          <div onClick={() => setInput(2)} style={{ background: "" }}>
             2
           </div>
-          <div
-            onClick={() => setInput(3)}
-            style={{ background: "", border: "1px solid #000" }}
-          >
+          <div onClick={() => setInput(3)} style={{ background: "" }}>
             3
           </div>
-          <div
-            onClick={() => setInput(4)}
-            style={{ background: "", border: "1px solid #000" }}
-          >
+          <div onClick={() => setInput(4)} style={{ background: "" }}>
             4
           </div>
-          <div
-            onClick={() => setInput(5)}
-            style={{ background: "", border: "1px solid #000" }}
-          >
+          <div onClick={() => setInput(5)} style={{ background: "" }}>
             5
           </div>
-          <div
-            onClick={() => setInput(6)}
-            style={{ background: "", border: "1px solid #000" }}
-          >
+          <div onClick={() => setInput(6)} style={{ background: "" }}>
             6
           </div>
-          <div
-            onClick={() => setInput(7)}
-            style={{ background: "", border: "1px solid #000" }}
-          >
+          <div onClick={() => setInput(7)} style={{ background: "" }}>
             7
           </div>
-          <div
-            onClick={() => setInput(8)}
-            style={{ background: "", border: "1px solid #000" }}
-          >
+          <div onClick={() => setInput(8)} style={{ background: "" }}>
             8
           </div>
         </div>
