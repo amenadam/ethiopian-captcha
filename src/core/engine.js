@@ -13,7 +13,8 @@ const normText = (s) => String(s).normalize("NFC").replace(/\s+/g, "");
 let warned = false;
 
 export function createCaptcha(options = {}) {
-  const cfg = { ...captchaConfig, ...options };
+  const defined = Object.fromEntries(Object.entries(options).filter(([, v]) => v !== undefined));
+  const cfg = { ...captchaConfig, ...defined };
   if (options.store && !options.secret) {
     throw new Error("ethiopian-captcha: `secret` is required when using a custom store.");
   }
